@@ -63,7 +63,7 @@ InstallIncDir := $(User)/Include
 #-------------------------------------------------------------------------------
 LibraryEntries := wups wut notifications mappedmemory kernel
 LibraryDirs := $(PortLibs)/lib $(Wups)/lib $(Wut)/lib $(Wums)/lib
-LibraryIncludeDirs := $(PortLibs)/include $(Wups)/include $(Wut)/include $(Wums)/include
+LibraryIncludeDirs := $(PortLibs)/include $(Wups)/include $(Wut)/include $(Wums)/include $(User)/Include
 LibraryDirFlags := $(foreach dir,$(LibraryDirs),-L$(dir))
 LibraryFlags := $(foreach entry,$(LibraryEntries),-l$(entry))
 
