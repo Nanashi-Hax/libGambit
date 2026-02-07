@@ -20,7 +20,7 @@ namespace Game
         uint8_t padding1[0x8];
         BulletMgr * bulletMgr;
 
-        static MainMgrBase *const sInstance;
+        static MainMgrBase *const & sInstance;
 
         METHOD(0x0E2302D8, Lp::Sys::Actor *, activateOneCancelUnnecessary, BulletMgr, int id, bool unk0, sead::Vector3<float> * position, sead::Vector3<float> * velocity);
     };
